@@ -1,0 +1,17 @@
+{
+  "name": "cubiq-abacus-types",
+  "version": "1.0.0",
+  "description": "Shared TypeScript definitions for cubiq-abacus",
+  "main": "dist/index.js", 
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",  
+    "prepublishOnly": "npm run build" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

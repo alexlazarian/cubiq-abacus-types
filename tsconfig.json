@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES5", // Compile down to ES5 for wide compatibility
+    "module": "CommonJS", // Use CommonJS module system
+    "declaration": true, // Generate corresponding '.d.ts' file.
+    "outDir": "./dist", // Redirect output structure to the 'dist' folder
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Disables namespace imports (import * as foo) and enables CJS/AMD/UMD style imports (import foo)
+    "forceConsistentCasingInFileNames": true // Disallow inconsistently-cased references to the same file.
+  },
+  "include": [
+    "src" // Assuming your source files are in a "src" directory
+  ],
+  "exclude": [
+    "node_modules", // Standard exclude
+    "dist" // Exclude the dist folder to avoid recursive type generation
+  ]
+}
