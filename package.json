@@ -8,8 +8,16 @@
     "build": "tsc",  
     "prepublishOnly": "npm run build" 
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexlazarian/cubiq-abacus-types.git"
+  },
+  "keywords": [
+    "typescript",
+    "types",
+    "shared-types"
+  ],
+  "author": "Alex Lazarian",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.3.3"
