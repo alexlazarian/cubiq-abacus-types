@@ -11,7 +11,7 @@ export interface IStudentGet {
 			groupId: string
 		}
 		stars: number
-		joinedOn: string
+		joinedOn: string | Date
 	}
 }
 
