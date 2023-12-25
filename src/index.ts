@@ -58,7 +58,13 @@ export interface IGroupGet {
 	payload: {}
 	response: {
 		groupName: string
-		studentIds: string[]
+		studentIds: {
+			name: string
+			email: string
+			avatar: string
+			stars: number
+			joinedOn: Date | string
+		}[]
 		groupId: string
 	}
 }
