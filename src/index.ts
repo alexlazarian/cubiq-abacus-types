@@ -57,6 +57,7 @@ export interface IStudentDelete {
 export interface IGroupGet {
     payload: {};
     response: {
+        groupId: string;
         groupName: string;
         studentIds: {
             name: string;
@@ -65,7 +66,6 @@ export interface IGroupGet {
             stars: number;
             joinedOn: Date | string;
         }[];
-        groupId: string;
     };
 }
 
@@ -75,11 +75,7 @@ export interface IGroupPost {
         studentEmails: Array<string>;
     };
     response: {
-        group: {
-            groupId: string;
-            groupName: string;
-            studentIds: Array<string>;
-        };
+        group: IGroupGet['response'];
     };
 }
 
