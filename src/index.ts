@@ -82,8 +82,9 @@ export interface IGroupPost {
 export interface IGroupPut {
     payload: {
         groupId: string;
-        // addStudentEmails: Array<string>;
-        // removeStudentEmails: Array<string>;
+        groupName: string;
+        addStudentEmails: Array<string>;
+        removeStudentEmails: Array<string>;
     };
     response: {
         group: IGroupGet['response'];
