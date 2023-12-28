@@ -79,6 +79,17 @@ export interface IGroupPost {
     };
 }
 
+export interface IGroupPut {
+    payload: {
+        groupId: string;
+        // addStudentEmails: Array<string>;
+        // removeStudentEmails: Array<string>;
+    };
+    response: {
+        group: IGroupGet['response'];
+    };
+}
+
 export interface IGroupDelete {
     payload: {
         groupId: string;
