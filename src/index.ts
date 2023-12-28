@@ -79,6 +79,15 @@ export interface IGroupPost {
     };
 }
 
+export interface IGroupDelete {
+    payload: {
+        groupId: string;
+    };
+    response: {
+        group: IGroupGet['response'];
+    };
+}
+
 // Error Types / Response Types
 
 export interface ErrorResponse {
