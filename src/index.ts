@@ -84,7 +84,9 @@ export interface IGroupDelete {
         groupId: string;
     };
     response: {
-        group: IGroupGet['response'];
+        group: {
+            groupId: string;
+        };
     };
 }
 
