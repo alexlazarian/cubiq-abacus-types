@@ -97,14 +97,14 @@ export interface IGroupPut {
                 stars: number;
                 joinedOn: Date | string;
             }[];
-            removedStudentIds: {
-                name: string;
-                email: string;
-                avatar: string;
-                stars: number;
-                joinedOn: Date | string;
-            }[];
         };
+        removedStudentIds: {
+            name: string;
+            email: string;
+            avatar: string;
+            stars: number;
+            joinedOn: Date | string;
+        }[];
     };
 }
 
