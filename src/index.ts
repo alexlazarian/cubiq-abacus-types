@@ -87,7 +87,24 @@ export interface IGroupPut {
         removeStudentEmails: Array<string>;
     };
     response: {
-        group: IGroupGet['response'];
+        group: {
+            groupId: string;
+            groupName: string;
+            studentIds: {
+                name: string;
+                email: string;
+                avatar: string;
+                stars: number;
+                joinedOn: Date | string;
+            }[];
+            removedStudentIds: {
+                name: string;
+                email: string;
+                avatar: string;
+                stars: number;
+                joinedOn: Date | string;
+            }[];
+        };
     };
 }
 
