@@ -147,6 +147,29 @@ export interface IHomeworkGet {
     };
 }
 
+export interface IHomeworkPost {
+    payload: {
+        groupId: string;
+        startDate: Date | string;
+        endDate: Date | string;
+        gameSettings: {
+            mode: 'column' | 'flash';
+            category: 'addition' | 'subtraction' | 'multiplication' | 'division';
+            rounds: number;
+            chain: number;
+            flashIn: number;
+            flashOut: number;
+        };
+    };
+    response: {
+        homework: IHomeworkGet['response'];
+    };
+}
+
+// 1. Commit code
+// 2. npm version patch
+// 3. npm publish --access public
+
 // Error Types / Response Types
 
 export interface ErrorResponse {
