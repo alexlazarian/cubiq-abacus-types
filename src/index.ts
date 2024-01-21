@@ -126,6 +126,27 @@ export interface IGroupDelete {
     };
 }
 
+export interface IHomeworkGet {
+    payload: {};
+    response: {
+        groupObjectId: {
+            groupName: string;
+            groupId: string;
+        };
+        startDate: Date | string;
+        endDate: Date | string;
+        status: 'in-progress' | 'finished';
+        gameSettings: {
+            mode: 'column' | 'flash';
+            category: 'addition' | 'subtraction' | 'multiplication' | 'division';
+            rounds: number;
+            chain: number;
+            flashIn: number;
+            flashOut: number;
+        };
+    };
+}
+
 // Error Types / Response Types
 
 export interface ErrorResponse {
