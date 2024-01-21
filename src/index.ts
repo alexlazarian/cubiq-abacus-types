@@ -135,7 +135,6 @@ export interface IHomeworkGet {
         };
         startDate: Date | string;
         endDate: Date | string;
-        status: 'in-progress' | 'finished';
         gameSettings: {
             mode: 'column' | 'flash';
             category: 'addition' | 'subtraction' | 'multiplication' | 'division';
