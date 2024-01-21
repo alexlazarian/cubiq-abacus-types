@@ -166,6 +166,17 @@ export interface IHomeworkPost {
     };
 }
 
+export interface IHomeworkDelete {
+    payload: {
+        homeworkId: string;
+    };
+    response: {
+        homework: {
+            homeworkId: string;
+        };
+    };
+}
+
 // 1. Commit code
 // 2. npm version patch
 // 3. npm publish --access public
