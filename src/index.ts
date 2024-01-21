@@ -11,7 +11,7 @@ export interface IStudentGet {
             groupId: string;
         };
         stars: number;
-        joinedOn: string | Date;
+        joinedOn: Date | string;
     };
 }
 
@@ -151,6 +151,7 @@ export interface IHomeworkPost {
         groupId: string;
         startDate: Date | string;
         endDate: Date | string;
+        createdOn: Date | string;
         gameSettings: {
             mode: 'column' | 'flash';
             category: 'addition' | 'subtraction' | 'multiplication' | 'division';
