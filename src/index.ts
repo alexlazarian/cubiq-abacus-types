@@ -1,6 +1,7 @@
 export * from './service/studentTypes';
 export * from './service/groupTypes';
 export * from './service/homeworkTypes';
+export * from './client/reduxStateTypes';
 
 // 1. Commit code
 // 2. npm version patch
