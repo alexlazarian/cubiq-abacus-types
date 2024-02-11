@@ -24,17 +24,13 @@ export interface IHomeworkGet {
 
 export interface IHomeworkPost {
     payload: {
-        groupId: string;
-        startDate: Date | string;
-        endDate: Date | string;
-        gameSettings: {
-            mode: 'column' | 'flash';
-            category: 'addition' | 'subtraction' | 'multiplication' | 'division';
-            rounds: number;
-            chain: number;
-            flashIn: number;
-            flashOut: number;
-        };
+        assignTo: string;
+        startDate: string;
+        endDate: string;
+        gameType: GameType;
+        numberOfRounds: number;
+        appearInterval?: number;
+        disappearInterval?: number;
     };
     response: {
         homework: IHomeworkGet['response'];
@@ -50,4 +46,9 @@ export interface IHomeworkDelete {
             homeworkId: string;
         };
     };
+}
+
+export enum GameType {
+    Column = 'Column',
+    Flash = 'Flash',
 }
