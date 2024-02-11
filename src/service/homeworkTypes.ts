@@ -12,8 +12,8 @@ export interface IHomeworkGet {
         createdOn: Date | string;
         reviewed: boolean;
         gameSettings: {
-            mode: 'column' | 'flash';
-            category: 'addition' | 'subtraction' | 'multiplication' | 'division';
+            mode: GameType;
+            category: GameCategory;
             rounds: number;
             chain: number;
             flashIn: number;
@@ -28,6 +28,7 @@ export interface IHomeworkPost {
         startDate: string;
         endDate: string;
         gameType: GameType;
+        category: GameCategory;
         numberOfRounds: number;
         appearInterval?: number;
         disappearInterval?: number;
@@ -51,4 +52,9 @@ export interface IHomeworkDelete {
 export enum GameType {
     Column = 'Column',
     Flash = 'Flash',
+}
+
+export enum GameCategory {
+    Addition = 'Addition',
+    Subtraction = 'Subtraction',
 }
