@@ -58,3 +58,8 @@ export enum GameCategory {
     Addition = 'Addition',
     Subtraction = 'Subtraction',
 }
+
+export enum GameStatus {
+    Completed = 'completed',
+    Pending = 'pending',
+}
