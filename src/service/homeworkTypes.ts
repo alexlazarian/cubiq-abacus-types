@@ -16,8 +16,8 @@ export interface IHomeworkGet {
             category: GameCategory;
             rounds: number;
             chain: number;
-            flashIn: number;
-            flashOut: number;
+            flashIn: number | null;
+            flashOut: number | null;
         };
     };
 }
