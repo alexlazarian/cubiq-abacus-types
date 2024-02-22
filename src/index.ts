@@ -1,3 +1,4 @@
+export * from './service/assignmentTypes';
 export * from './service/studentTypes';
 export * from './service/groupTypes';
 export * from './service/homeworkTypes';
