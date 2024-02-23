@@ -56,10 +56,10 @@ export enum GameType {
 }
 
 export enum GameCategory {
-    ['5S_ADD'] = '5s-addition',
-    ['5S_SUB'] = '5s-subtraction',
-    ['10S_ADD'] = '10s-addition',
-    ['10S_SUB'] = '10s-subtraction',
+    ['5S_ADD'] = 'Small Friends Addition',
+    ['5S_SUB'] = 'Small Friends Subtraction',
+    ['10S_ADD'] = 'Big Friends Addition',
+    ['10S_SUB'] = 'Big Friends Subtraction',
 }
 
 export enum GameStatus {
