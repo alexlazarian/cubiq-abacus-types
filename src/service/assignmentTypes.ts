@@ -1,6 +1,6 @@
 // Group Types
 
-import { GameStatus } from './homeworkTypes';
+import { GameStatus, IHomeworkGet } from './homeworkTypes';
 
 export interface IAssignmentGet {
     payload: {};
@@ -8,7 +8,7 @@ export interface IAssignmentGet {
         bank: { question: string; correctAnswer: number; userAnswer: number; _id: string }[];
         createdOn: Date;
         endOn: Date;
-        homeworkObjectId: string;
+        homeworkObjectId: Omit<IHomeworkGet['response'], 'assignmentIds' | 'groupObjectId'>;
         startOn: Date;
         status: GameStatus;
         completedOn: Date;

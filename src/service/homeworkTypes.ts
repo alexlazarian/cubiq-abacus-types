@@ -2,7 +2,8 @@
 export interface IHomeworkGet {
     payload: {};
     response: {
-        id: string;
+        _id: string;
+        assignmentIds: string[];
         groupObjectId: {
             groupName: string;
             groupId: string;
