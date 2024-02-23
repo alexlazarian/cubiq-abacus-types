@@ -5,14 +5,14 @@ import { GameStatus } from './homeworkTypes';
 export interface IAssignmentGet {
     payload: {};
     response: {
-        id: string;
-        homeworkObjectId: string;
+        bank: { question: string; correctAnswer: number; userAnswer: number; _id: string }[];
         createdOn: Date;
-        startOn: Date;
         endOn: Date;
-        bank: { question: string; correctAnswer: number; userAnswer: number }[];
+        homeworkObjectId: string;
+        startOn: Date;
         status: GameStatus;
         completedOn: Date;
         completedTime: number;
+        _id: string;
     };
 }
