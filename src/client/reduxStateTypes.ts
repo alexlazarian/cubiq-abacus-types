@@ -14,4 +14,5 @@ export type IHomeworksRedux = {
 };
 export type IAssignmentsRedux = IAssignmentGet['response'] & {
     due: string;
+    daysDiff: number;
 };
