@@ -7,6 +7,7 @@ export interface IHomeworkGet {
         groupObjectId: {
             groupName: string;
             groupId: string;
+            _id: string;
         };
         startDate: Date | string;
         endDate: Date | string;
