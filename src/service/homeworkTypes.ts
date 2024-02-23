@@ -2,12 +2,11 @@
 export interface IHomeworkGet {
     payload: {};
     response: {
-        _id: string;
+        id: string;
         assignmentIds: string[];
         groupObjectId: {
             groupName: string;
             groupId: string;
-            _id: string;
         };
         startDate: Date | string;
         endDate: Date | string;
