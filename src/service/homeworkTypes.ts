@@ -8,9 +8,9 @@ export interface IHomeworkGet {
         _id: string;
         assignmentIds: Omit<IAssignmentGet['response'], 'homeworkObjectId'>[];
         groupObjectId: Pick<IGroupGet['response'], 'groupId' | 'groupName'>;
-        startDate: Date | string;
-        endDate: Date | string;
-        createdOn: Date | string;
+        dateStart: Date | string;
+        dateEnd: Date | string;
+        dateCreated: Date | string;
         reviewed: boolean;
         gameSettings: {
             mode: GameType;
