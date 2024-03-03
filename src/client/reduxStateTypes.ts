@@ -11,6 +11,7 @@ export type IHomeworksRedux = {
     expiresIn: string;
     settings: string;
     status: string;
+    assignments: IAssignmentsRedux[];
 };
 export type IAssignmentsRedux = IAssignmentGet['response'] & {
     due: string;
