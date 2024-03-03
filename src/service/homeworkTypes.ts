@@ -5,7 +5,7 @@ import { IGroupGet } from './groupTypes';
 export interface IHomeworkGet {
     payload: {};
     response: {
-        id: string;
+        _id: string;
         assignmentIds: Omit<IAssignmentGet['response'], 'homeworkObjectId'>[];
         groupObjectId: Pick<IGroupGet['response'], 'groupId' | 'groupName'>;
         startDate: Date | string;
