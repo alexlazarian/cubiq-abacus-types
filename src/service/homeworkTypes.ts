@@ -1,13 +1,13 @@
+import { IAssignmentGet } from './assignmentTypes';
+import { IGroupGet } from './groupTypes';
+
 // Homework Types
 export interface IHomeworkGet {
     payload: {};
     response: {
         id: string;
-        assignmentIds: string[];
-        groupObjectId: {
-            groupName: string;
-            groupId: string;
-        };
+        assignmentIds: Omit<IAssignmentGet['response'], 'homeworkObjectId'>[];
+        groupObjectId: Pick<IGroupGet['response'], 'groupId' | 'groupName'>;
         startDate: Date | string;
         endDate: Date | string;
         createdOn: Date | string;
