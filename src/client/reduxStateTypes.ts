@@ -8,6 +8,7 @@ export type IHomeworksRedux = {
     id: string;
     groupName: string;
     startDate: string;
+    endDate: string;
     expiresIn: string;
     settings: string;
     status: string;
