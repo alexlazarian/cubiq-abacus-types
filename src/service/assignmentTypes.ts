@@ -11,8 +11,8 @@ export interface IAssignmentGet {
         homeworkObjectId: Omit<IHomeworkGet['response'], 'assignmentIds' | 'groupObjectId'>;
         startOn: Date;
         status: GameStatus;
-        completedOn: Date;
-        completedTime: number;
+        completedOn: Date | null;
+        completedTime: number | null;
         _id: string;
     };
 }
