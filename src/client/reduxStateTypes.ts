@@ -13,7 +13,6 @@ export type IHomeworksRedux = {
     expiresIn: string;
     settings: string;
     status: HomeworkStatus;
-    styleClassStatus: string;
     assignments: Omit<IAssignmentGet['response'], 'homeworkObjectId'>[];
 };
 export type IAssignmentsRedux = IAssignmentGet['response'] & {
