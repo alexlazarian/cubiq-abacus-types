@@ -13,3 +13,7 @@ export type IHomeworksRedux = {
     status: string;
     assignments: Omit<IAssignmentGet['response'], 'homeworkObjectId'>[];
 };
+export type IAssignmentsRedux = IAssignmentGet['response'] & {
+    due: string;
+    daysDiff: number;
+};
