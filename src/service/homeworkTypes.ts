@@ -67,3 +67,10 @@ export enum GameStatus {
     Completed = 'completed',
     Pending = 'pending',
 }
+
+export enum HomeworkStatus {
+    Reviewed = 'Reviewed',
+    NeedsReview = 'Needs Review',
+    InProgress = 'In Progress',
+    NotStarted = 'Not Started',
+}
