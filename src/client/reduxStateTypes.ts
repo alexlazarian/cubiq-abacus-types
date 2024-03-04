@@ -9,7 +9,9 @@ export type IHomeworksRedux = {
     id: string;
     groupName: string;
     startDate: string;
+    startDateYYYYMMDD: string;
     endDate: string;
+    endDateYYYYMMDD: string;
     expiresIn: string;
     settings: string;
     status: HomeworkStatus;
