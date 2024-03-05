@@ -6,7 +6,7 @@ export interface IHomeworkGet {
     payload: {};
     response: {
         _id: string;
-        assignmentIds: Omit<IAssignmentGet['response'], 'homeworkObjectId'>[];
+        assignmentIds: IHomeworkAssignment[];
         groupObjectId: Pick<IGroupGet['response'], 'groupId' | 'groupName'>;
         dateStart: Date | string;
         dateEnd: Date | string;
@@ -73,4 +73,25 @@ export enum HomeworkStatus {
     NeedsReview = 'Needs Review',
     InProgress = 'In Progress',
     NotStarted = 'Not Started',
+}
+
+interface IHomeworkAssignment {
+    bank: {
+        question: string;
+        correctAnswer: number;
+        userAnswer: number | null;
+        _id: string;
+    }[];
+    completedOn: Date | null;
+    completedTime: number | null;
+    createdOn: Date;
+    endOn: Date;
+    homeworkObjectId: string;
+    startOn: Date;
+    status: GameStatus;
+    studentObjectId: {
+        avatar: string;
+        name: string;
+        email: string;
+    };
 }
