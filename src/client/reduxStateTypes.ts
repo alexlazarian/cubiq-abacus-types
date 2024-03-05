@@ -13,7 +13,6 @@ export type IHomeworksRedux = {
     endDate: string;
     endDateYYYYMMDD: string;
     expiresIn: string;
-    settings: string;
     status: HomeworkStatus;
     assignments: IHomeworkGet['response']['assignmentIds'];
 };
