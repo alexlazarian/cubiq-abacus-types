@@ -1,6 +1,6 @@
 import { IAssignmentGet } from '../service/assignmentTypes';
 import { IGroupGet } from '../service/groupTypes';
-import { HomeworkStatus } from '../service/homeworkTypes';
+import { HomeworkStatus, IHomeworkGet } from '../service/homeworkTypes';
 import { IStudentGet } from '../service/studentTypes';
 
 export type IStudentsRedux = IStudentGet['response'] & {};
@@ -15,7 +15,7 @@ export type IHomeworksRedux = {
     expiresIn: string;
     settings: string;
     status: HomeworkStatus;
-    assignments: Omit<IAssignmentGet['response'], 'homeworkObjectId'>[];
+    assignments: IHomeworkGet['response']['assignmentIds'];
 };
 export type IAssignmentsRedux = IAssignmentGet['response'] & {
     due: string;
