@@ -2,7 +2,6 @@ import { IAssignmentGet } from '../service/assignmentTypes';
 import { IGroupGet } from '../service/groupTypes';
 import { GameStatus, HomeworkStatus } from '../service/homeworkTypes';
 import { IStudentGet } from '../service/studentTypes';
-
 export type IStudentsRedux = IStudentGet['response'] & {};
 export type IGroupsRedux = IGroupGet['response'] & {};
 export type IHomeworksRedux = {
@@ -17,40 +16,36 @@ export type IHomeworksRedux = {
     assignments: AssignmentsGroupedByDay;
 };
 
-interface AssignmentBank {
-    question: string;
-    correctAnswer: number;
-    userAnswer: number | null;
-    _id: string;
-}
-
-interface StudentObject {
-    name: string;
-    email: string;
-    avatar: string;
-}
-
-export interface IAssignment {
-    homeworkObjectId: string;
-    studentObjectId: StudentObject;
-    startOn: string;
-    endOn: string;
-    createdOn: string;
-    bank: AssignmentBank[];
+export interface ITeacherHomeworkItemAssignment {
     status: GameStatus;
-    completedOn: string | null;
+    homeworkId: string;
+    student: {
+        avatar: string;
+        correctAnswers: string;
+        email: string;
+        name: string;
+    };
+    dates: {
+        completedOn: string | null;
+        createdOn: string;
+        endOn: string;
+        startOn: string;
+    };
     completedTime: number | null;
+    bank: {
+        isCorrect: boolean;
+        question: string;
+    }[];
 }
-
 interface AssignmentsGroupedByDay {
     [key: string]: {
-        items: IAssignment[];
+        items: ITeacherHomeworkItemAssignment[];
         submissions: string;
         date: string;
     };
 }
-
 export type IAssignmentsRedux = IAssignmentGet['response'] & {
     due: string;
     daysDiff: number;
 };
+export {};
