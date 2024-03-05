@@ -43,7 +43,11 @@ interface Assignment {
 }
 
 interface AssignmentsGroupedByDay {
-    [key: string]: Assignment[];
+    [key: string]: {
+        items: Assignment[];
+        submissions: string;
+        date: string;
+    };
 }
 
 export type IAssignmentsRedux = IAssignmentGet['response'] & {
