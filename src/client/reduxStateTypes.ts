@@ -1,6 +1,6 @@
 import { IAssignmentGet } from '../service/assignmentTypes';
 import { IGroupGet } from '../service/groupTypes';
-import { HomeworkStatus } from '../service/homeworkTypes';
+import { GameStatus, HomeworkStatus } from '../service/homeworkTypes';
 import { IStudentGet } from '../service/studentTypes';
 
 export type IStudentsRedux = IStudentGet['response'] & {};
@@ -37,7 +37,7 @@ interface Assignment {
     endOn: string;
     createdOn: string;
     bank: AssignmentBank[];
-    status: 'completed' | 'pending'; // Assuming these are the only possible statuses
+    status: GameStatus;
     completedOn: string | null;
     completedTime: number | null;
 }
