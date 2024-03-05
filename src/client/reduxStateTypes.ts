@@ -30,7 +30,7 @@ interface StudentObject {
     avatar: string;
 }
 
-interface Assignment {
+export interface IAssignment {
     homeworkObjectId: string;
     studentObjectId: StudentObject;
     startOn: string;
@@ -44,7 +44,7 @@ interface Assignment {
 
 interface AssignmentsGroupedByDay {
     [key: string]: {
-        items: Assignment[];
+        items: IAssignment[];
         submissions: string;
         date: string;
     };
