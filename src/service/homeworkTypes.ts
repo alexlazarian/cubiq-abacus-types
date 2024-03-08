@@ -1,4 +1,3 @@
-import { IAssignmentGet } from './assignmentTypes';
 import { IGroupGet } from './groupTypes';
 
 // Homework Types
@@ -41,6 +40,17 @@ export interface IHomeworkPost {
 }
 
 export interface IHomeworkDelete {
+    payload: {
+        homeworkId: string;
+    };
+    response: {
+        homework: {
+            homeworkId: string;
+        };
+    };
+}
+
+export interface IHomeworkPut {
     payload: {
         homeworkId: string;
     };
