@@ -76,6 +76,7 @@ export enum GameCategory {
 export enum GameStatus {
     Completed = 'completed',
     Pending = 'pending',
+    Failed = 'failed',
 }
 
 export enum HomeworkStatus {
