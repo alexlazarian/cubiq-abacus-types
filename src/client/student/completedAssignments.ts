@@ -29,7 +29,7 @@ export interface IClientStudentCompletedAssignment {
     createdOn: string | Date;
     bank: BankItem[];
     status: GameStatus;
-    completedOn: string | Date;
+    completedOn: string;
     completedTime: string;
     correctAnswers: string;
     stars: number;
