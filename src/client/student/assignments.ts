@@ -17,18 +17,18 @@ interface HomeworkObject {
         flashOut: number | null;
     };
     _id: string;
-    dateStart: string;
-    dateEnd: string;
-    dateCreated: string;
+    dateStart: string | Date;
+    dateEnd: string | Date;
+    dateCreated: string | Date;
     reviewed: boolean;
 }
 
 export interface IClientStudentAssignment {
     _id: string;
     homeworkObjectId: HomeworkObject;
-    startOn: string;
-    endOn: string;
-    createdOn: string;
+    startOn: string | Date;
+    endOn: string | Date;
+    createdOn: string | Date;
     bank: BankItem[];
     status: GameStatus;
     due: string;

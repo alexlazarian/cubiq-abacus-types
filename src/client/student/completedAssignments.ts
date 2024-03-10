@@ -10,9 +10,9 @@ interface HomeworkObject {
         flashOut: number;
     };
     _id: string;
-    dateStart: string;
-    dateEnd: string;
-    dateCreated: string;
+    dateStart: string | Date;
+    dateEnd: string | Date;
+    dateCreated: string | Date;
     reviewed: boolean;
 }
 
@@ -24,12 +24,12 @@ interface BankItem {
 export interface IClientStudentCompletedAssignment {
     _id: string;
     homeworkObjectId: HomeworkObject;
-    startOn: string;
-    endOn: string;
-    createdOn: string;
+    startOn: string | Date;
+    endOn: string | Date;
+    createdOn: string | Date;
     bank: BankItem[];
     status: GameStatus;
-    completedOn: string;
+    completedOn: string | Date;
     completedTime: string;
     correctAnswers: string;
     stars: number;
