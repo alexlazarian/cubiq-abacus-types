@@ -7,6 +7,7 @@ export type IGroupsRedux = IGroupGet['response'] & {};
 export type IHomeworksRedux = {
     id: string;
     groupName: string;
+    isEndDatePast: boolean;
     startDateRaw: string | Date;
     startDate: string;
     startDateYYYYMMDD: string;
