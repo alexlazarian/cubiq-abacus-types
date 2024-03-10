@@ -2,13 +2,14 @@ export * from './client/student/assignments';
 export * from './client/student/completedAssignments';
 export * from './client/student/self';
 
+export * from './client/teacher/groups';
 export * from './client/teacher/homeworks';
+export * from './client/teacher/students';
 
 export * from './service/assignmentTypes';
 export * from './service/studentTypes';
 export * from './service/groupTypes';
 export * from './service/homeworkTypes';
-export * from './client/reduxStateTypes';
 
 // 1. Commit code
 // 2. npm version patch
