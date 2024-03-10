@@ -7,8 +7,10 @@ export type IGroupsRedux = IGroupGet['response'] & {};
 export type IHomeworksRedux = {
     id: string;
     groupName: string;
+    startDateRaw: string | Date;
     startDate: string;
     startDateYYYYMMDD: string;
+    endDateRaw: string | Date;
     endDate: string;
     endDateYYYYMMDD: string;
     expiresIn: string;
