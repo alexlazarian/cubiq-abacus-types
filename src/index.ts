@@ -2,6 +2,8 @@ export * from './client/student/assignments';
 export * from './client/student/completedAssignments';
 export * from './client/student/self';
 
+export * from './client/teacher/homeworks';
+
 export * from './service/assignmentTypes';
 export * from './service/studentTypes';
 export * from './service/groupTypes';
