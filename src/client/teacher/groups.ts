@@ -1,3 +1,3 @@
 import { IGroupGet } from '../../service/groupTypes';
 
-export type IGroupsRedux = IGroupGet['response'] & {};
+export type IClientTeacherGroups = IGroupGet['response'] & {};
