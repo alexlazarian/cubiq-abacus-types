@@ -21,12 +21,13 @@ interface ITeacherHomeworkItemAssignment {
         question: string;
     }[];
 }
-interface AssignmentsGroupedByDay {
-    [key: string]: {
-        items: ITeacherHomeworkItemAssignment[];
-        submissions: string;
-        date: string;
-    };
+export interface IReformattedGroupedAssignments {
+    items: ITeacherHomeworkItemAssignment[];
+    submissions: string;
+    date: string;
+}
+interface IAssignmentsGroupedByDay {
+    [key: string]: IReformattedGroupedAssignments;
 }
 
 export interface IClientTeacherHomeworks {
@@ -41,5 +42,5 @@ export interface IClientTeacherHomeworks {
     endDateYYYYMMDD: string;
     expiresIn: string;
     status: HomeworkStatus;
-    assignments: AssignmentsGroupedByDay;
+    assignments: IAssignmentsGroupedByDay;
 }
