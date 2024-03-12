@@ -1,4 +1,4 @@
-import { GameStatus, GameType } from '../../service/homeworkTypes';
+import { GameCategory, GameStatus, GameType } from '../../service/homeworkTypes';
 
 interface BankItem {
     question: string;
@@ -10,7 +10,7 @@ interface BankItem {
 interface HomeworkObject {
     gameSettings: {
         mode: GameType;
-        category: string;
+        category: GameCategory;
         rounds: number;
         chain: number;
         flashIn: number | null;
