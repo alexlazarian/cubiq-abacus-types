@@ -15,6 +15,8 @@ interface HomeworkObject {
         chain: number;
         flashIn: number | null;
         flashOut: number | null;
+        flashInSeconds: number | null;
+        flashOutSeconds: number | null;
     };
     _id: string;
     dateStart: string | Date;
