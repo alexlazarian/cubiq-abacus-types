@@ -18,3 +18,11 @@ export interface IAssignmentGet {
         _id: string;
     };
 }
+
+export interface IAssignmentPut {
+    payload: {
+        timeMs: number;
+        answers: Record<string, number>;
+    };
+    response: {};
+}
