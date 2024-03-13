@@ -1,11 +1,11 @@
 // Group Types
 
-import { GameStatus, IHomeworkGet } from './homeworkTypes';
+import { GameCategory, GameStatus, GameType, IHomeworkGet } from './homeworkTypes';
 import { IStudentGet } from './studentTypes';
 
 interface IGameSettings {
-    mode: string;
-    category: string;
+    mode: GameType;
+    category: GameCategory;
     rounds: number;
     chain: number;
     flashIn: null;
@@ -32,11 +32,11 @@ export interface IAssignmentGet {
     response: {
         _id: string;
         homeworkObjectId: IHomeworkObject;
-        startOn: string;
-        endOn: string;
-        createdOn: string;
+        startOn: Date;
+        endOn: Date;
+        createdOn: Date;
         bank: IBankItem[];
-        status: string;
+        status: GameStatus;
         completedOn: Date | null;
         completedTime: number | null;
     };
