@@ -37,6 +37,8 @@ export interface IAssignmentGet {
         createdOn: string;
         bank: IBankItem[];
         status: string;
+        completedOn: Date | null;
+        completedTime: number | null;
     };
 }
 
