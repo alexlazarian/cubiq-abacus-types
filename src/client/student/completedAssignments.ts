@@ -7,7 +7,6 @@ interface HomeworkObject {
         rounds: number;
         chain: number;
         flashIn: number;
-        flashOut: number;
     };
     _id: string;
     dateStart: string | Date;
