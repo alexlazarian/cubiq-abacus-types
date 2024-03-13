@@ -44,6 +44,7 @@ export interface IAssignmentGet {
 
 export interface IAssignmentPut {
     payload: {
+        assignmentId: string;
         timeMs: number;
         answers: Record<string, number>;
     };
