@@ -5,7 +5,6 @@ export interface IStudentGet {
         name: string;
         email: string;
         avatar: string;
-        password: string;
         groupObjectId: {
             groupName: string;
             groupId: string;
