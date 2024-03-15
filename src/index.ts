@@ -20,3 +20,13 @@ export * from './service/homeworkTypes';
 export interface ErrorResponse {
     message: string;
 }
+
+export enum Collections {
+    LOCAL = 'cubiq-local',
+    PROD = 'cubiq-prod',
+}
+
+export enum Environments {
+    LOCAL = 'local',
+    PROD = 'prod',
+}
