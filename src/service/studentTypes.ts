@@ -50,3 +50,25 @@ export interface IStudentDelete {
         };
     };
 }
+
+export interface IStudentDelete {
+    payload: {
+        email: string;
+    };
+    response: {
+        student: {
+            email: string;
+        };
+    };
+}
+
+export interface IStudentUploadAvatar {
+    payload: {
+        formData: string;
+        payload: IStudentPut['payload'];
+    };
+    response: {
+        email: string;
+        avatarUrl: string;
+    };
+}
