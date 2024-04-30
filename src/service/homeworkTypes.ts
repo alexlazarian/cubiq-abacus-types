@@ -69,6 +69,10 @@ export enum GameCategory {
     ['5S_SUB'] = 'Small Friends Subtraction',
     ['10S_ADD'] = 'Big Friends Addition',
     ['10S_SUB'] = 'Big Friends Subtraction',
+    ['MIX_ADD'] = 'Mix Addition',
+    ['MIX_SUB'] = 'Mix Subtraction',
+    ['DIRECT_ADD'] = 'Direct Addition',
+    ['DIRECT_SUB'] = 'Direct Subtraction',
 }
 
 export enum GameStatus {
