@@ -28,6 +28,8 @@ export interface IHomeworkPost {
         dateStart: string;
         flashIn?: number;
         gameCategory: GameCategory;
+        gameChain: number;
+        gameFormulas: number[];
         gameDigits: number;
         gameRounds: number;
         gameType: GameType;
