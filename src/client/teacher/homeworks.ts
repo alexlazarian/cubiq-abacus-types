@@ -33,6 +33,7 @@ interface IAssignmentsGroupedByDay {
 export interface IClientTeacherHomeworks {
     id: string;
     groupName: string;
+    groupId: string;
     isEndDatePast: boolean;
     startDateRaw: string | Date;
     startDate: string;
