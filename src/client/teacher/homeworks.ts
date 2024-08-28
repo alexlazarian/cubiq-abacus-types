@@ -38,6 +38,7 @@ export interface IClientTeacherHomeworks {
     startDateRaw: string | Date;
     startDate: string;
     startDateYYYYMMDD: string;
+    createdDate: string;
     endDateRaw: string | Date;
     endDate: string;
     endDateYYYYMMDD: string;
