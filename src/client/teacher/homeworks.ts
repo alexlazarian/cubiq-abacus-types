@@ -1,4 +1,4 @@
-import { GameStatus, HomeworkStatus } from '../../service/homeworkTypes';
+import { GameStatus, HomeworkStatus, IHomeworkGet } from '../../service/homeworkTypes';
 
 interface ITeacherHomeworkItemAssignment {
     status: GameStatus;
@@ -34,6 +34,7 @@ export interface IClientTeacherHomeworks {
     id: string;
     groupName: string;
     groupId: string;
+    gameSettings: IHomeworkGet['response']['gameSettings'];
     isEndDatePast: boolean;
     startDateRaw: string | Date;
     startDate: string;
