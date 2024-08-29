@@ -75,6 +75,7 @@ export enum GameCategory {
     ['MIX_SUB'] = 'Mix Subtraction',
     ['DIRECT_ADD'] = 'Direct Addition',
     ['DIRECT_SUB'] = 'Direct Subtraction',
+    ['DIRECT'] = 'Direct',
 }
 
 export enum GameStatus {
